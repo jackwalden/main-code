@@ -1,2 +1,1 @@
-# main-code ,,,,, the impossible wordle code
-# link to walkover video 📹
+Please be sure to download the two attached files to play! 
