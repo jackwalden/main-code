@@ -1,5 +1,6 @@
 import random
 import re
+import os
 
 def search_words_with_letters(file_path, letters):
     filtered_words = []
@@ -90,6 +91,11 @@ def play_wordle(words):
             break
 
 if __name__ == "__main__":
-    with open("words.txt", "r") as file:
+    script_directory = os.path.dirname(os.path.abspath(__file__))
+
+    file_path = os.path.join(script_directory, "words.txt")
+
+    with open(file_path, "r") as file:
         words_list = [line.strip().lower() for line in file]
+
     play_wordle(words_list)
